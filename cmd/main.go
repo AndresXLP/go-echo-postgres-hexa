@@ -16,6 +16,7 @@ var (
 )
 
 func main() {
+
 	container := providers.BuildContainer()
 
 	err := container.Invoke(func(router *router.Router, server *echo.Echo) {
@@ -26,5 +27,4 @@ func main() {
 	if err != nil {
 		log.Panic(err)
 	}
-
 }

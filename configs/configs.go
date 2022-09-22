@@ -8,8 +8,9 @@ import (
 )
 
 type Config struct {
-	ServerHost string `requred:"true" split_words:"true"`
-	ServerPort int    `requred:"true" split_words:"true"`
+	ServerHost  string `requred:"true"`
+	ServerPort  int    `requred:"true"`
+	DatabaseUri string `requred:"true"`
 }
 
 var (
